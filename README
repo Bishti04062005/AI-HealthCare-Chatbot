@@ -1,5 +1,9 @@
 # AI Healthcare Chatbot 🩺
 
+
+https://ai-healthcare-chatbot-ahanasamanta.streamlit.app/
+
+
 A Streamlit-based general health Q&A assistant powered by [OpenRouter](https://openrouter.ai),
 letting you swap between multiple LLMs (Llama, GPT-4o mini, Claude, Gemini, etc.) without
 changing code.
