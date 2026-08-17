@@ -1,0 +1,178 @@
+{
+  "Dengue": {
+    "symptoms": [
+      "High fever",
+      "Severe headache",
+      "Joint pain",
+      "Muscle pain",
+      "Skin rash",
+      "Nausea"
+    ],
+    "prevention": [
+      "Avoid stagnant water",
+      "Use mosquito nets",
+      "Apply mosquito repellent",
+      "Wear full-sleeved clothing"
+    ],
+    "treatment": "Drink plenty of fluids and seek medical attention if symptoms worsen.",
+    "vaccination": "Dengue vaccines are available in some countries for eligible individuals."
+  },
+
+  "Malaria": {
+    "symptoms": [
+      "Fever",
+      "Chills",
+      "Sweating",
+      "Headache",
+      "Fatigue",
+      "Nausea"
+    ],
+    "prevention": [
+      "Sleep under insecticide-treated nets",
+      "Use mosquito repellents",
+      "Wear protective clothing",
+      "Eliminate mosquito breeding sites"
+    ],
+    "treatment": "Antimalarial medications prescribed by healthcare professionals.",
+    "vaccination": "Malaria vaccines are available in selected regions."
+  },
+
+  "COVID-19": {
+    "symptoms": [
+      "Fever",
+      "Cough",
+      "Sore throat",
+      "Shortness of breath",
+      "Loss of taste",
+      "Loss of smell"
+    ],
+    "prevention": [
+      "Wash hands regularly",
+      "Wear masks when needed",
+      "Maintain physical distancing",
+      "Ensure proper ventilation"
+    ],
+    "treatment": "Follow healthcare guidance and isolate if infected.",
+    "vaccination": "COVID-19 vaccination is recommended according to national guidelines."
+  },
+
+  "Diabetes": {
+    "symptoms": [
+      "Frequent urination",
+      "Excessive thirst",
+      "Fatigue",
+      "Blurred vision",
+      "Slow wound healing"
+    ],
+    "prevention": [
+      "Maintain healthy body weight",
+      "Exercise regularly",
+      "Eat a balanced diet",
+      "Avoid excessive sugar intake"
+    ],
+    "treatment": "Lifestyle management, monitoring, and prescribed medications.",
+    "vaccination": "No specific vaccine is available for diabetes."
+  },
+
+  "Hypertension": {
+    "symptoms": [
+      "Headache",
+      "Dizziness",
+      "Chest discomfort",
+      "Shortness of breath"
+    ],
+    "prevention": [
+      "Reduce salt intake",
+      "Exercise regularly",
+      "Manage stress",
+      "Avoid smoking"
+    ],
+    "treatment": "Lifestyle modifications and prescribed medications.",
+    "vaccination": "No specific vaccine is available for hypertension."
+  },
+
+  "Tuberculosis": {
+    "symptoms": [
+      "Persistent cough",
+      "Weight loss",
+      "Night sweats",
+      "Fatigue",
+      "Chest pain"
+    ],
+    "prevention": [
+      "Early diagnosis",
+      "Good ventilation",
+      "Cover mouth while coughing",
+      "Avoid close contact with infected individuals"
+    ],
+    "treatment": "Long-term antibiotic treatment under medical supervision.",
+    "vaccination": "BCG vaccine helps protect against severe forms of tuberculosis."
+  },
+
+  "Typhoid": {
+    "symptoms": [
+      "High fever",
+      "Weakness",
+      "Stomach pain",
+      "Loss of appetite",
+      "Constipation or diarrhea"
+    ],
+    "prevention": [
+      "Drink safe water",
+      "Maintain food hygiene",
+      "Wash hands regularly"
+    ],
+    "treatment": "Antibiotics prescribed by a healthcare professional.",
+    "vaccination": "Typhoid vaccines are available for prevention."
+  },
+
+  "Cholera": {
+    "symptoms": [
+      "Severe diarrhea",
+      "Dehydration",
+      "Vomiting",
+      "Muscle cramps"
+    ],
+    "prevention": [
+      "Drink clean water",
+      "Proper sanitation",
+      "Hand washing",
+      "Safe food practices"
+    ],
+    "treatment": "Oral rehydration therapy and medical care.",
+    "vaccination": "Oral cholera vaccines are available."
+  },
+
+  "Asthma": {
+    "symptoms": [
+      "Wheezing",
+      "Shortness of breath",
+      "Chest tightness",
+      "Coughing"
+    ],
+    "prevention": [
+      "Avoid triggers",
+      "Reduce exposure to allergens",
+      "Follow treatment plans"
+    ],
+    "treatment": "Inhalers and prescribed medications.",
+    "vaccination": "Annual flu vaccination is often recommended."
+  },
+
+  "Anemia": {
+    "symptoms": [
+      "Fatigue",
+      "Weakness",
+      "Pale skin",
+      "Shortness of breath",
+      "Dizziness"
+    ],
+    "prevention": [
+      "Eat iron-rich foods",
+      "Consume adequate vitamins",
+      "Regular health checkups"
+    ],
+    "treatment": "Iron supplements and dietary improvements.",
+    "vaccination": "No specific vaccine is available for anemia."
+  }
+}

@@ -1,0 +1,86 @@
+# AI Healthcare Chatbot 🩺
+
+A Streamlit-based general health Q&A assistant powered by [OpenRouter](https://openrouter.ai),
+letting you swap between multiple LLMs (Llama, GPT-4o mini, Claude, Gemini, etc.) without
+changing code.
+
+## Features
+
+- 💬 Conversational general health Q&A (not a diagnostic tool)
+- 🔀 Switch between multiple models via OpenRouter from a dropdown
+- 📚 Sidebar "Quick Topics" for one-click common questions
+- 🚨 Built-in emergency-language detection that surfaces crisis/emergency resources
+  instead of a normal chatbot reply
+- 📄 Export the full conversation as a PDF transcript
+- ⚠️ Persistent medical disclaimer throughout the UI
+
+## Project Structure
+
+```
+ai-healthcare-chatbot/
+├── app.py              # Streamlit entry point / UI
+├── chatbot.py           # OpenRouter API calls, system prompt, emergency detection
+├── disease_data.json    # Quick-topic prompts shown in the sidebar
+├── pdf_generator.py     # Builds a PDF transcript of the chat
+├── requirements.txt
+├── .env                 # Your OpenRouter API key (not committed)
+└── README.md
+```
+
+## Setup
+
+1. **Clone / open the project folder** and create a virtual environment:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate   # Windows: .venv\Scripts\activate
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Add your OpenRouter API key.** Get one at https://openrouter.ai/keys, then edit `.env`:
+   ```
+   OPENROUTER_API_KEY=sk-or-v1-xxxxxxxxxxxxxxxx
+   OPENROUTER_MODEL=meta-llama/llama-3.1-8b-instruct:free
+   ```
+
+4. **Run the app:**
+   ```bash
+   streamlit run app.py
+   ```
+
+5. Open the URL Streamlit prints (usually `http://localhost:8501`).
+
+## Changing the model
+
+Pick a model from the sidebar dropdown, or change the default in `.env` /
+`MODEL_OPTIONS` in `app.py`. Any model slug supported by OpenRouter can be used —
+see the full list at https://openrouter.ai/models.
+
+> **Using a `:free` model and getting a 404?** OpenRouter's free-tier models require
+> you to opt in to their data policy first. Go to https://openrouter.ai/settings/privacy
+> and enable "free model publication" (prompt logging/training). Paid models like
+> `openai/gpt-4o-mini` don't need this.
+>
+> Model slugs also get deprecated/renamed over time — if a model stops working, check
+> https://openrouter.ai/models for its current slug.
+
+## Important Disclaimer
+
+This chatbot provides **general health information only**. It does **not**:
+- Diagnose medical conditions
+- Prescribe medication or dosages
+- Replace a consultation with a licensed healthcare provider
+
+For urgent or emergency symptoms, contact your local emergency services immediately.
+If the app detects language suggesting a possible emergency (e.g. chest pain, suicidal
+thoughts), it will show emergency resources instead of a conversational answer.
+
+## Possible Extensions
+
+- Dockerize the app for easier deployment
+- Add unit tests for `chatbot.py` and `pdf_generator.py`
+- Add authentication / per-user chat history persistence
+- Add a symptom-checker mode alongside the Q&A mode
