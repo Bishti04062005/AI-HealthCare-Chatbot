@@ -9,3 +9,5 @@ reportlab
 scikit-learn
 requests
 openai
+fpdf
+fpdf2
